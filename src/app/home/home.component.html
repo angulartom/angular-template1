@@ -1,4 +1,8 @@
 <p>
 home works!
 </p>
-<div *ngFor="let number of [0,1,2,3,4]" [id]="number">id={{number}}</div>
+<div #divs *ngFor="let number of [10,11,12,13,14]" [id]="number">id={{number}}</div>
+<app-dumb1></app-dumb1>
+<div>List of all ids</div>
+<span *ngFor="let x of result">{{x}}<br></span>
+<button (click)="getDivs()">Get divs</button>
